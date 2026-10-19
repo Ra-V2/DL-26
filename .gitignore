@@ -1,0 +1,52 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Downloaded datasets
+data/
+
+# Model checkpoints and trained weights
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Experiment outputs
+runs/
+logs/
+outputs/
+tensorboard/
+
+# Python environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE and editor files
+.vscode/
+.idea/
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.log
+*.tmp
+
+# Local environment snapshots
+requirements-lock.txt

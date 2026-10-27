@@ -1,11 +1,11 @@
-# DL
+# DL-26
 
 A collection of deep learning projects. Each project lives in its own folder with its own code, notebooks and environment.
 
 ## Projects
 
-| Project | Description |
-| --- | --- |
+| Project                               | Description                                                                                                                          |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | [highway-networks](highway-networks/) | Implementation of Highway Networks in PyTorch, with experiments on CIFAR-10 comparing highway and standard CNNs at different depths. |
 
 More projects will be added here.

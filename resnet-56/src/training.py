@@ -169,3 +169,14 @@ def load_checkpoint(path, device):
     model = ResNet56().to(device)
     model.load_state_dict(checkpoint["model_state_dict"])
     return model.eval(), checkpoint
+
+
+@torch.inference_mode()
+def predict(model, loader, device):
+    """Return the logits and true labels for the loader's examples on the CPU."""
+    model.eval()
+    logits, targets = [], []
+    for images, labels in loader:
+        logits.append(model(images.to(device, non_blocking=True)).cpu())
+        targets.append(labels)
+    return torch.cat(logits), torch.cat(targets)
